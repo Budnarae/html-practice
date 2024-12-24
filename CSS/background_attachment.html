@@ -1,0 +1,27 @@
+<!--background_attachment.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			body {
+				background-color: #E7E7E8;
+				background-image: url('BackgroundFront.png'), url('BackgroundBack.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+		</style>
+	</head>
+	<body>
+		<p>very long text</p>
+	</body>
+</html>
+
+<style>
+	body {
+		background: url('BackgroundFront.png') bottom / 100% no-repeat fixed,
+		url('BackgroundBack.png') bottom / 100% no-repeat fixed #E7E7E8;
+	}
+</style>
