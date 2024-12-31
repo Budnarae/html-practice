@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>익명 함수 선언하기</title>
+	<script>
+		// 변수 선언
+		const func = function()
+		{
+			console.log('함수 내부의 코드입니다 ... 1');
+			console.log('함수 내부의 코드입니다 ... 2');
+			console.log('함수 내부의 코드입니다 ... 3');
+			console.log('');
+		}
+
+		// 함수를 호출한다
+		func();
+		func();
+
+		// 출력한다
+		console.log(typeof func);	// 함수의 자료형을 확인한다
+		console.log(func);			// 함수 자체도 단순한 자료이므로 출력할 수 있다
+	</script>
+</head>
+<body>
+</body>
+</html>

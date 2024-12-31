@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>윤년 확인</title>
+	<script>
+		function checkLeapYear (year)
+		{
+			if (year % 4 === 0 && (!(year % 100 === 0) || year % 400 === 0))
+				return true;
+			return false;
+		}
+
+		const year = prompt("년을 입력하세요", "ex) 2024");
+	
+		if (checkLeapYear(year))
+			console.log("윤년입니다.");
+		else
+			console.log("윤년이 아닙니다.");
+	</script>
+</head>
+<body>
+</body>
+</html>
