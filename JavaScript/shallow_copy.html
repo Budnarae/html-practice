@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>shallow copy</title>
+		<script>
+			// 사야 하는 물건 목록
+			const obj_200301 = ['우유', '식빵'];
+			const obj_200302 = obj_200301;
+
+			obj_200302.push('고구마');
+			obj_200302.push('토마토');
+
+			// 출력
+			console.log(obj_200301);
+			console.log(obj_200302);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

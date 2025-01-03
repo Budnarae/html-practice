@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<title>this 키워드의 차이</title>
+	<script>
+		// 변수 선언
+		const test = {
+			a: function () {
+				console.log(this);
+			},
+			// 화살표 함수 내부에서 this를 사용하면 this 키워드가 window 객체를 나타낸다.
+			// 상황에 따라 또 다른 객체를 나타낼 수도 있다.
+			b: () => {
+				console.log(this);
+			}
+		}
+
+		// 메소드를 호출
+		test.a();
+		test.b();
+	</script>
+</head>
+<body>
+</body>
+</html>

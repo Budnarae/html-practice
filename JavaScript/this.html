@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<title>this 키워드</title>
+	<script>
+		const pet = {
+			name: "cloud",
+			eat: function (food) {
+				alert(this.name + "은/는 " + food + "을/를 먹습니다.");
+			}
+		}
+
+		// 메소드를 호출한다
+		pet.eat('밥');
+	</script>
+</head>
+<body>
+</body>
+</html>

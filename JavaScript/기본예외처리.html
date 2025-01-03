@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const h1 = document.querySelector('h1');
+			// h1이 존재하면 true롤 변환되고, 존재하지 않으면 false로 변환된다
+			if (h1)
+			{
+				h1.textContent = '안녕하세요';
+			}
+			else
+			{
+				console.log('h1 태그를 추출할 수 없다.');
+			}
+		})
+	</script>
+</html>

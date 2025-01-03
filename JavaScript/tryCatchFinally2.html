@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>try catch 구문의 사용</title>
+		<script>
+			try
+			{
+				alert('A 위치입니다.');
+				throw "에외 강제 발생";
+			}
+			catch (exception)
+			{
+				alert('B 위치입니다.');
+				return ;				// 왜 안되는지 모르겠다
+			}
+			finally
+			{
+				alert('C 위치입니다.');
+			}
+
+			// 함수를 호출한다
+			test();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

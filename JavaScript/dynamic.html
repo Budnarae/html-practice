@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+	<title>동적으로 객체 속성 추가</title>
+	<script>
+		'use strict'
+		// 객체 선언
+		const student = {};
+		// 객체의 속성을 동적으로 추가한다
+		student.name = "sihong";
+		student.hobby = "music";
+		student.dream = "biology";
+		// 객체의 속성을 동적으로 제거한다
+		delete student.dream;
+
+		// 출력
+		console.log(JSON.stringify(student, null, 2));
+	</script>
+</head>
+<body>
+</body>
+</html>

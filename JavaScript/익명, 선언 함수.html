@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<title>익명 함수와 선언 함수의 차이</title>
+	<script>
+		// 익명 함수 테스트
+		// 변수 선언
+		let	anony;
+
+		// 익명 함수를 2번 생성
+		anony = function () {
+			console.log('1번째 익명 함수입니다.');
+		}
+		anony = function () {
+			console.log('2번째 익명 함수입니다.');
+		}
+
+		anony();
+	</script>
+	<script>
+		// 선언 함수 테스트
+		calledFunc();	// 선언적 함수를 생성하는 코드 앞에 입력한다
+
+		// 선언적 함수를 2번 생성한다
+		function calledFunc () {
+			console.log('1번째 선언적 함수입니다.');
+		}
+		function calledFunc () {
+			console.log('2번째 선언적 함수입니다.');
+		}
+	</script>
+	<script>
+		'use strict'
+		// 선언 함수와 익명 함수의 조합
+		
+		// 익명 함수를 생성한다.
+		func = function () {
+			console.log('익명 함수입니다.');
+		}
+		// 선언 함수를 생성한다.
+		function func () {
+			console.log('선언적 함수입니다.');
+		}
+
+		// 함수를 호출한다
+		func();
+	</script>
+</head>
+<body>
+</body>
+</html>

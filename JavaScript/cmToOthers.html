@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>cm 단위를 여러 단위로 변환하는 프로그램</title>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				let current;
+				let transConst = 10;
+
+				const select = document.querySelector('select');
+				const input = document.querySelector('input');
+				const span = document.querySelector('span');
+
+				const calculate = () => {
+					span.textContent = (current * transConst).toFixed(2);
+				}
+
+				select.addEventListener('change', (event) => {
+					const options = event.currentTarget.options;
+					const index = event.currentTarget.options.selectedIndex;
+					transConst = Number(options[index].value);
+					calculate();
+				})
+
+				input.addEventListener('keyup', (event) => {
+					current = Number(event.currentTarget.value);	// 값을 입력하면 현재 값을 추출한다.
+					calculate();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text"> cm = 
+		<span></span>
+		<select>
+			<option value="10">mm</option>
+			<option value="0.01">m</option>
+			<option value="0.393701">inch</option>
+		</select>
+	</body>
+</html>

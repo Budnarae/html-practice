@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>얕은 복사로 객체 복사하기</title>
+		<script>
+			const cloud = {
+				name: 'cloud',
+				age: 6,
+				type: 'puppy'
+			}
+			const star = cloud;
+			star.name = 'star';
+			star.age = 1;
+
+			console.log(JSON.stringify(cloud));
+			console.log(JSON.stringify(star));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
